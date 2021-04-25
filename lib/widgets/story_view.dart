@@ -390,7 +390,7 @@ class StoryView extends StatefulWidget {
   final Function(Direction?)? onVerticalSwipeComplete;
 
   /// Callback for when a story is currently being shown.
-  final ValueChanged<StoryItem>? onStoryShow;
+  final ValueChanged<StoryItem, int>? onStoryShow;
 
   /// Where the progress indicator should be placed.
   final ProgressPosition progressPosition;
