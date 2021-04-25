@@ -2,7 +2,7 @@ import 'package:rxdart/rxdart.dart';
 
 enum PlaybackState { pause, play, next, previous }
 
-int storyPosition = 0;
+
 
 /// Controller to sync playback between animated child (story) views. This
 /// helps make sure when stories are paused, the animation (gifs/slides) are
@@ -10,6 +10,8 @@ int storyPosition = 0;
 /// Another reason for using the controller is to place the stories on `paused`
 /// state when a media is loading.
 class StoryController {
+  int storyPosition = 0;
+  
   /// Stream that broadcasts the playback state of the stories.
   final playbackNotifier = BehaviorSubject<PlaybackState>();
 
