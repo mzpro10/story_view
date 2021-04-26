@@ -523,7 +523,7 @@ class StoryViewState extends State<StoryView> with TickerProviderStateMixin {
     })!;
 
     if (widget.onStoryShow != null) {
-      widget.onStoryShow!(widget.storyItems.indexWhere((it) => !it!.shown);
+      widget.onStoryShow!(widget.storyItems.indexWhere((it) => !it!.shown));
     }
 
     _animationController =
